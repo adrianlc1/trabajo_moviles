@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cerrar sesión"
+            android:text="@string/logout"
             android:textColor="#E74C3C"
             android:textSize="10sp"
             android:textStyle="bold" />
@@ -79,7 +79,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mascota: "
+                            android:text="@string/label_pet"
                             android:textColor="#95A5A6"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -101,7 +101,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dueño: "
+                            android:text="@string/label_owner"
                             android:textColor="#95A5A6"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -125,7 +125,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PERSONALIDAD"
+                android:text="@string/section_personality"
                 android:textColor="#95A5A6"
                 android:textSize="11sp"
                 android:textStyle="bold"
@@ -141,7 +141,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="HÁBITOS Y GUSTOS"
+                android:text="@string/section_habits"
                 android:textColor="#95A5A6"
                 android:textSize="11sp"
                 android:textStyle="bold"
@@ -157,7 +157,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RASGOS FÍSICOS"
+                android:text="@string/section_traits"
                 android:textColor="#95A5A6"
                 android:textSize="11sp"
                 android:textStyle="bold"
@@ -173,7 +173,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="GALERÍA DE FOTOS"
+                android:text="@string/section_gallery"
                 android:textColor="#95A5A6"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -204,7 +204,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:backgroundTint="#27AE60"
-            android:text="GUARDAR CAMBIOS"
+            android:text="@string/save_changes"
             android:textStyle="bold"
             app:cornerRadius="12dp" />
     </LinearLayout>

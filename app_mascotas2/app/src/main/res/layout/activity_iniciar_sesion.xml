@@ -26,7 +26,7 @@
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INICIO SESIÓN"
+        android:text="@string/login_title"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#1E73E8"
@@ -35,25 +35,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <TextView
-        android:id="@+id/tvSubtitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RED SOCIAL DE MASCOTAS"
-        android:textSize="12sp"
-        android:textColor="#8A8A8A"
-        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:hint="Email"
+        android:layout_height="50dp"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
         android:padding="12dp"
         android:background="@android:drawable/editbox_background"
-        app:layout_constraintTop_toBottomOf="@id/tvSubtitulo"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"/>
@@ -61,8 +51,8 @@
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:hint="Contraseña"
+        android:layout_height="50dp"
+        android:hint="@string/password_hint"
         android:inputType="textPassword"
         android:padding="12dp"
         android:background="@android:drawable/editbox_background"
@@ -75,7 +65,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:text="Iniciar sesión"
+        android:text="@string/login_button"
         android:textColor="@android:color/white"
         android:backgroundTint="#1E73E8"
         app:cornerRadius="8dp"
@@ -88,7 +78,7 @@
         android:id="@+id/tvRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿No tienes cuenta? Registrarse"
+        android:text="@string/register_prompt"
         android:textColor="#1E73E8"
         android:textStyle="bold"
         android:padding="20dp"
@@ -98,6 +88,6 @@
         app:layout_constraintTop_toBottomOf="@id/btnLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

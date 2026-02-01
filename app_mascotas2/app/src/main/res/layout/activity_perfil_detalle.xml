@@ -45,7 +45,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mascota: "
+                            android:text="@string/label_pet"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:textColor="#95A5A6" />
@@ -67,7 +67,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dueño: "
+                            android:text="@string/label_owner"
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="#95A5A6" />
@@ -88,16 +88,67 @@
                 android:background="#F8F9F9"
                 android:layout_marginVertical="30dp" />
 
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PERSONALIDAD" android:textStyle="bold" android:textSize="12sp" android:textColor="#95A5A6" android:layout_marginBottom="8dp"/>
-            <TextView android:id="@+id/tvPersonalidadDetalle" android:layout_width="match_parent" android:layout_height="55dp" android:background="@android:drawable/editbox_background" android:paddingHorizontal="15dp" android:gravity="center_vertical" android:layout_marginBottom="20dp" android:textColor="#2C3E50"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/section_personality"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#95A5A6"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tvPersonalidadDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@android:drawable/editbox_background"
+                android:paddingHorizontal="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:textColor="#2C3E50"/>
 
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HÁBITOS Y GUSTOS" android:textStyle="bold" android:textSize="12sp" android:textColor="#95A5A6" android:layout_marginBottom="8dp"/>
-            <TextView android:id="@+id/tvHabitosDetalle" android:layout_width="match_parent" android:layout_height="55dp" android:background="@android:drawable/editbox_background" android:paddingHorizontal="15dp" android:gravity="center_vertical" android:layout_marginBottom="20dp" android:textColor="#2C3E50"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/section_habits"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#95A5A6"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tvHabitosDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@android:drawable/editbox_background"
+                android:paddingHorizontal="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:textColor="#2C3E50"/>
 
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RASGOS FÍSICOS" android:textStyle="bold" android:textSize="12sp" android:textColor="#95A5A6" android:layout_marginBottom="8dp"/>
-            <TextView android:id="@+id/tvRasgosDetalle" android:layout_width="match_parent" android:layout_height="55dp" android:background="@android:drawable/editbox_background" android:paddingHorizontal="15dp" android:gravity="center_vertical" android:layout_marginBottom="30dp" android:textColor="#2C3E50"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/section_traits"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#95A5A6"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tvRasgosDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@android:drawable/editbox_background"
+                android:paddingHorizontal="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="30dp"
+                android:textColor="#2C3E50"/>
 
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GALERÍA DE FOTOS" android:textStyle="bold" android:textColor="#95A5A6" android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/section_gallery"
+                android:textStyle="bold"
+                android:textColor="#95A5A6"
+                android:textSize="12sp" />
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvCarruselFotosDetalle"
                 android:layout_width="match_parent"
@@ -120,7 +171,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="30dp"
             android:backgroundTint="#34495E"
-            android:text="VOLVER"
+            android:text="@string/back"
             android:textStyle="bold"
             app:cornerRadius="15dp" />
     </LinearLayout>

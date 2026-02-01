@@ -20,7 +20,7 @@
         android:id="@+id/tvNombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Usuario"
+        android:text="@string/default_user"
         android:textSize="12sp"
         android:textStyle="normal"
         android:textAlignment="center"

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pet Social Network</string>
+    <string name="back">BACK</string>
+    <string name="search">Search</string>
+    <string name="search_hint">E.g.: dog, cat, bird</string>
+    <string name="logout">Log out</string>
+    <string name="save_changes">SAVE CHANGES</string>
+
+    <string name="login_title">LOGIN</string>
+    <string name="login_subtitle">PET SOCIAL NETWORK</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_prompt">Don\'t have an account? Register</string>
+
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="pet_name_hint">Your pet\'s name</string>
+    <string name="animal_type_label">What animal is it?</string>
+
+    <string name="label_pet">Pet: </string>
+    <string name="label_owner">Owner: </string>
+    <string name="section_personality">PERSONALITY</string>
+    <string name="section_habits">HABITS AND LIKES</string>
+    <string name="section_traits">PHYSICAL TRAITS</string>
+    <string name="section_gallery">PHOTO GALLERY</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <string name="likes_count">103 likes</string>
+    <string name="default_user">User</string>
+        <string-array name="tipos_mascotas_default">
+            <item>Dog</item>
+            <item>Cat</item>
+            <item>Bird</item>
+        </string-array>
+</resources>

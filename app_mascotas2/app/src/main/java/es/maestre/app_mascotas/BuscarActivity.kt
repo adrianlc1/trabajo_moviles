@@ -75,6 +75,14 @@ class BuscarActivity : AppCompatActivity() {
         }
     }
     private fun hacerBusqueda(animal: String) {
+        val entradaUsuario = animal.lowercase().trim()
+        //Para traducir la palabras si las pones en ingles al español para que pueda hacer la busqueda
+        val traduccion = when (entradaUsuario) {
+            "dog" -> "perro"
+            "cat" -> "gato"
+            "bird" -> "pajaro"
+            else -> entradaUsuario
+        }
         binding.rvResultadosBusqueda.adapter = null
         // Observamos todos los usuarios disponibles en la base de datos
         usuarioViewModel.data.observe(this) { listaUsuarios ->
@@ -88,7 +96,7 @@ class BuscarActivity : AppCompatActivity() {
 
                     //Comprueba si el tipo de animal que se ha puesto en el campo de
                     // texto coincide con algun tipo de animal que este guardado en la base de datos
-                    if(tipoMascotaEnBD.contains(animal)){
+                    if(tipoMascotaEnBD.contains(traduccion)){
                         //Comprueba si el usuario no ha sido añadido antes
                         if (!emailsProcesados.contains(u.email)) {
 

@@ -16,6 +16,7 @@
         android:textColor="#1E73E8"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
+        android:text="@string/search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,35 +34,28 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingHorizontal="12dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@android:drawable/ic_menu_search"
-                app:tint="#8A8A8A" />
+            android:padding="8dp"
+            android:gravity="center_vertical">
 
             <EditText
                 android:id="@+id/etBuscar"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:inputType="text"
+                android:hint="@string/search_hint"
                 android:paddingHorizontal="12dp"
-                android:hint="Ej: perro, gato, pajaro"
-                android:textColorHint="#8A8A8A"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:inputType="text" />
 
             <Button
                 android:id="@+id/btnBuscar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:backgroundTint="#1E73E8"
-                android:text="Buscar"
+                android:text="@string/search"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:cornerRadius="8dp" />
@@ -70,17 +64,18 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvResultadosBusqueda"
-        android:layout_width="412dp"
-        android:layout_height="647dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="4dp"
         android:clipToPadding="false"
         android:paddingHorizontal="10dp"
         android:paddingBottom="20dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/cardBusqueda"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
-        app:spanCount="2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-3dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:spanCount="2" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
@@ -92,4 +87,3 @@
         app:menu="@menu/bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

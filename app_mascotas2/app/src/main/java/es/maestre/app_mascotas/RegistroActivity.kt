@@ -32,9 +32,15 @@ class RegistroActivity : AppCompatActivity() {
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString().trim()
             val mascota = binding.etMascota.text.toString().trim()
-            //Obtiene el tipo de animal al seleccionarlo con el desplegable
-            val tipoAnimal = binding.spinnerTipoAnimal.selectedItem.toString()
-
+            //Obtiene el numero que tiene ese tipo de animal al seleccionarlo con el desplegable
+            val tipoAnimal = binding.spinnerTipoAnimal.selectedItemPosition
+            //Aqui miramos cual es el tipo de animal con el que coincide y lo guardamos en una variable
+            val animalBD = when (tipoAnimal) {
+                0 -> "gato"
+                1 -> "perro"
+                2 -> "pajaro"
+                else -> "otro"
+            }
             //Comprueba que se han rellenado todos los campos y si estan vacios detiene la creacion del usuario
             if (nombre.isEmpty() || apellido.isEmpty() || email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Por favor completa todos los campos", Toast.LENGTH_SHORT).show()
@@ -47,7 +53,7 @@ class RegistroActivity : AppCompatActivity() {
                 email = email,
                 contrasena = password,
                 nombremascota = mascota,
-                tipoanimal = tipoAnimal
+                tipoanimal = animalBD
             )
 
             //Llama al viewModel para guardar el usuario en la base de datos
@@ -55,8 +61,8 @@ class RegistroActivity : AppCompatActivity() {
             //Accede a ImagenesProvider
             val provider = conexion.ImagenesProvider
             //Dependiendo del tipo de animal que eligas guardara  en la base de datos unas fotos o otras (perfil,post,carrusel)
-            when (tipoAnimal) {
-                "Gato" -> {
+            when (animalBD) {
+                "gato" -> {
 
                     provider.insertarFotoPorEmail(
                         imagenViewModel,
@@ -67,7 +73,7 @@ class RegistroActivity : AppCompatActivity() {
                     )
                 }
 
-                "Perro" -> {
+                "perro" -> {
                     provider.insertarFotoPorEmail(
                         imagenViewModel,
                         email,
@@ -77,7 +83,7 @@ class RegistroActivity : AppCompatActivity() {
                     )
                 }
 
-                "Pájaro" -> {
+                "pajaro" -> {
                     provider.insertarFotoPorEmail(
                         imagenViewModel,
                         email,
@@ -93,7 +99,7 @@ class RegistroActivity : AppCompatActivity() {
             //Cambiamos de pantalla a la del Login
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-
+            finish()
         }
     }
 }

@@ -11,7 +11,7 @@
         android:id="@+id/tvUsuarioPost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuario"
+        android:text="@string/default_user"
         android:textStyle="bold"/>
 
     <ImageView
@@ -41,19 +41,10 @@
             app:checkedIconVisible="true"
             app:chipIconVisible="true"
             app:chipBackgroundColor="#F2F2F2"
-
-            app:chipStartPadding="8dp"
-            app:chipEndPadding="0dp"
-            app:iconStartPadding="0dp"
-            app:iconEndPadding="0dp"
-            app:textStartPadding="0dp"
-            app:textEndPadding="0dp"
-
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:insetLeft="0dp"
             android:insetRight="0dp"
-
             android:minWidth="0dp"
             android:minHeight="0dp"
             android:gravity="center" />
@@ -62,9 +53,8 @@
             android:id="@+id/tvLikes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="103 me gustas" />
-
+            android:layout_marginStart="8dp"
+            android:text="@string/likes_count"
+            android:textStyle="bold" />
     </LinearLayout>
-
 </LinearLayout>

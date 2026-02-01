@@ -31,83 +31,86 @@
             android:id="@+id/tvTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CREAR CUENTA"
-            android:textSize="22sp"
+            android:text="@string/create_account"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#1E73E8"
             app:layout_constraintTop_toBottomOf="@id/imgLogo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/etNombre"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:hint="Nombre"
-            android:paddingHorizontal="16dp"
+            android:hint="@string/first_name_hint"
+            android:inputType="textPersonName"
+            android:padding="12dp"
             android:background="@android:drawable/editbox_background"
             app:layout_constraintTop_toBottomOf="@id/tvTitulo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="24dp"/>
+            android:layout_marginTop="24dp" />
 
         <EditText
             android:id="@+id/etApellido"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:hint="Apellido"
-            android:paddingHorizontal="16dp"
+            android:hint="@string/last_name_hint"
+            android:inputType="textPersonName"
+            android:padding="12dp"
             android:background="@android:drawable/editbox_background"
             app:layout_constraintTop_toBottomOf="@id/etNombre"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp"/>
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:hint="Email"
+            android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
-            android:paddingHorizontal="16dp"
+            android:padding="12dp"
             android:background="@android:drawable/editbox_background"
             app:layout_constraintTop_toBottomOf="@id/etApellido"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp"/>
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:hint="Contraseña"
+            android:hint="@string/password_hint"
             android:inputType="textPassword"
-            android:paddingHorizontal="16dp"
+            android:padding="12dp"
             android:background="@android:drawable/editbox_background"
             app:layout_constraintTop_toBottomOf="@id/etEmail"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp"/>
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/etMascota"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:hint="Nombre de tu mascota"
-            android:paddingHorizontal="16dp"
+            android:hint="@string/pet_name_hint"
+            android:inputType="textPersonName"
+            android:padding="12dp"
             android:background="@android:drawable/editbox_background"
             app:layout_constraintTop_toBottomOf="@id/etPassword"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp"/>
+            android:layout_marginTop="16dp" />
 
         <TextView
             android:id="@+id/tvLabelTipo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Qué animal es?"
-            android:textColor="#8A8A8A"
+            android:text="@string/animal_type_label"
+            android:textColor="#666666"
             android:textSize="13sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
@@ -129,7 +132,7 @@
             android:id="@+id/btnRegistrar"
             android:layout_width="0dp"
             android:layout_height="55dp"
-            android:text="CREAR CUENTA"
+            android:text="@string/create_account"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"

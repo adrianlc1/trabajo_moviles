@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvUsuarioPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imgPost"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="6dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="6dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:checkable="true"
+            app:chipIcon="@drawable/heart_suit"
+            app:checkedIcon="@drawable/heart"
+            app:chipIconSize="26dp"
+            app:checkedIconVisible="true"
+            app:chipIconVisible="true"
+            app:chipBackgroundColor="#F2F2F2"
+
+            app:chipStartPadding="8dp"
+            app:chipEndPadding="0dp"
+            app:iconStartPadding="0dp"
+            app:iconEndPadding="0dp"
+            app:textStartPadding="0dp"
+            app:textEndPadding="0dp"
+
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="103 me gustas" />
+
+    </LinearLayout>
+
+</LinearLayout>

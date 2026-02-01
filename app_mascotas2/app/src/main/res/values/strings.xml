@@ -1,17 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">app_mascotas</string>
-    <string name="title_activity_inicio">InicioActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string-array name="tipos_mascotas_default">
-        <item>Gato</item>
-        <item>Perro</item>
-        <item>Pájaro</item>
-    </string-array>
+    <string name="app_name">Red Social de Mascotas</string>
+    <string name="back">VOLVER</string>
+    <string name="search">Buscar</string>
+    <string name="search_hint">Ej: perro, gato, pajaro</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="save_changes">GUARDAR CAMBIOS</string>
+
+    <string name="login_title">INICIO SESIÓN</string>
+    <string name="login_subtitle">RED SOCIAL DE MASCOTAS</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="register_prompt">¿No tienes cuenta? Registrarse</string>
+
+    <string name="create_account">CREAR CUENTA</string>
+    <string name="first_name_hint">Nombre</string>
+    <string name="last_name_hint">Apellido</string>
+    <string name="pet_name_hint">Nombre de tu mascota</string>
+    <string name="animal_type_label">¿Qué animal es?</string>
+
+    <string name="label_pet">Mascota: </string>
+    <string name="label_owner">Dueño: </string>
+    <string name="section_personality">PERSONALIDAD</string>
+    <string name="section_habits">HÁBITOS Y GUSTOS</string>
+    <string name="section_traits">RASGOS FÍSICOS</string>
+    <string name="section_gallery">GALERÍA DE FOTOS</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_profile">Perfil</string>
+
+    <string name="likes_count">103 me gustas</string>
+    <string name="default_user">Usuario</string>
+        <string-array name="tipos_mascotas_default">
+            <item>Perro</item>
+            <item>Gato</item>
+            <item>Pájaro</item>
+        </string-array>
 </resources>
